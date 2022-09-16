@@ -13,6 +13,7 @@ import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { ContratoComponent } from './components/contrato/contrato.component'
 
 import { OAuthModule } from 'angular-oauth2-oidc';
+import { ParcelasComponent } from './components/parcelas/parcelas.component';
 
 export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 
@@ -22,7 +23,8 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     MatriculaComponent,
     HomeComponent,
     LoginComponent,
-    ContratoComponent
+    ContratoComponent,
+    ParcelasComponent
   ],
   imports: [
     BrowserModule,
