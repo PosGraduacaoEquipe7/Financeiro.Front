@@ -12,6 +12,8 @@ import { LoginComponent } from './components/login/login.component';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { ContratoComponent } from './components/contrato/contrato.component'
 
+import { OAuthModule } from 'angular-oauth2-oidc';
+
 export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
 
 @NgModule({
@@ -29,6 +31,7 @@ export const options: Partial<null|IConfig> | (() => Partial<IConfig>) = null;
     FormsModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
+    OAuthModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
